@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Manipulation Station</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>Text Manipulation Station</h2>
+        <input type="text" class="userInput" placeholder="Enter any String" required>
+
+        <div class="buttons">
+            <button class="upperCase" onclick="upperCase();">UPPER CASE</button>
+            <button class="lowerCase" onclick="lowerCase()">LOWER CASE</button>
+            <button class="capitalize" onclick="capitalize()">CAPITALIZE</button>
+            <button class="reverse" onclick="reverse()">REVERSE</button>
+            <button class="wordsLength" onclick="length()">LENGTH</button>
+            <button class="wordsCount" onclick="wordsCount()">TOTAL WORDS</button>
+        </div>
+
+        <div class="display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
