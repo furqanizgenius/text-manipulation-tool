@@ -4,8 +4,12 @@ let input;
 
 function upperCase() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
-        return false;
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+            // icon: "warning"
+        })
     }
     else {
         display.innerHTML = "";
@@ -20,8 +24,11 @@ function upperCase() {
 
 function lowerCase() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
-        return false;
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+        })
     }
     else {
         display.innerHTML = "";
@@ -36,8 +43,11 @@ function lowerCase() {
 
 function capitalize() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
-        return false;
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+        })
     }
     else {
         display.innerHTML = "";
@@ -55,8 +65,11 @@ function capitalize() {
 
 function reverse() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
-        return false;
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+        })
     }
     else {
         display.innerHTML = "";
@@ -71,7 +84,11 @@ function reverse() {
 }
 function length() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+        })
     }
     else {
         display.innerHTML = "";
@@ -85,7 +102,7 @@ function length() {
         // input = userInput.value.trim().length;  
 
         // This will minus all the Spaces from the User Input
-        input = userInput.value.replace(/\s/g, "").length;  
+        input = userInput.value.replace(/\s/g, "").length;
         div.append("Length: ", input);
         display.append(div);
     }
@@ -93,7 +110,11 @@ function length() {
 
 function wordsCount() {
     if ((userInput.value.trim() === "") || (!/^[a-zA-Z\s]+$/.test(userInput.value))) {
-        alert("Enter any string")
+        // alert("Enter any string")
+        Swal.fire({
+            text: "Please Enter any String",
+            icon: "error",
+        })
     }
     else {
         display.innerHTML = "";
@@ -102,7 +123,7 @@ function wordsCount() {
         //  will display the words with capitalize first Alphabet of Word
         // input = userInput.value.toLowerCase().split(" ").map(word =>
         //     word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
-                
+
         input = userInput.value.toLowerCase().split(/\s+/).map(word =>
             word.charAt(0) + word.slice(1)).length;
 
@@ -110,5 +131,3 @@ function wordsCount() {
         display.append(div);
     }
 }
-
-
